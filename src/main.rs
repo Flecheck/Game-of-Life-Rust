@@ -13,7 +13,7 @@ fn main() {
     println!("{:?}",[0;20]);
     println!("{}",a);
     println!("{:?}",[0;20]);
-    for _ in 0..2000 {
+    for _ in 0..5000 {
         //std::thread::sleep(std::time::Duration::from_millis(250));
         a = a.next_gen();
         println!("{}",a);
@@ -31,7 +31,7 @@ impl fmt::Display for Grid {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         for line in &self.grid {
             for case in line {
-                write!(f,"{}",if case.get() == 1 {format!("{}",1)} else {" ".to_string()}).unwrap();
+                write!(f,"{}",if case.get() == 1 {format!("{}",0)} else {" ".to_string()}).unwrap();
             };
             write!(f,"\n").unwrap();
         };
@@ -90,7 +90,7 @@ impl<'a> Case<'a> {
     pub fn adj_count(&self) -> usize {
         let (x,y) = self.pos;
         let grid = self.grid;
-        let (xmax,ymax) = grid.size;
+        let (xmax,ymax) = grid.size();
         let mut count = 0;
         if x>0 {
             count += grid.case(x-1,y).value();
