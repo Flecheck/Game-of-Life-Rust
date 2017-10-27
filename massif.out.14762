@@ -1,0 +1,140 @@
+desc: (none)
+cmd: ./target/release/game_of_life
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=671266
+mem_heap_B=552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=671783
+mem_heap_B=672
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=671939
+mem_heap_B=1696
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=672162
+mem_heap_B=1816
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=781685
+mem_heap_B=1816
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=peak
+n4: 1816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x56DDC7B: _IO_file_doallocate (in /usr/lib/libc-2.26.so)
+  n1: 1024 0x56EC6D7: _IO_doallocbuf (in /usr/lib/libc-2.26.so)
+   n1: 1024 0x56EB713: _IO_file_underflow@@GLIBC_2.2.5 (in /usr/lib/libc-2.26.so)
+    n1: 1024 0x56DF646: getdelim (in /usr/lib/libc-2.26.so)
+     n1: 1024 0x5244FEA: pthread_getattr_np (in /usr/lib/libpthread-2.26.so)
+      n1: 1024 0x11C986: std::rt::lang_start (thread.rs:244)
+       n0: 1024 0x5691F68: (below main) (in /usr/lib/libc-2.26.so)
+ n1: 552 0x56DE79C: __fopen_internal (in /usr/lib/libc-2.26.so)
+  n1: 552 0x5244F3A: pthread_getattr_np (in /usr/lib/libpthread-2.26.so)
+   n1: 552 0x11C986: std::rt::lang_start (thread.rs:244)
+    n0: 552 0x5691F68: (below main) (in /usr/lib/libc-2.26.so)
+ n1: 240 0x56DF4EF: getdelim (in /usr/lib/libc-2.26.so)
+  n1: 240 0x5244FEA: pthread_getattr_np (in /usr/lib/libpthread-2.26.so)
+   n1: 240 0x11C986: std::rt::lang_start (thread.rs:244)
+    n0: 240 0x5691F68: (below main) (in /usr/lib/libc-2.26.so)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=781685
+mem_heap_B=1576
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=781889
+mem_heap_B=552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=782011
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=782066
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=782190
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=809010
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1169657
+mem_heap_B=64
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=5171657259
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=5171657736
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
